@@ -18,52 +18,53 @@ class Solution{
     // //   }
     // //   if(Alice_sum%2==0){ cout<<"Alice Win the Game";}
     // //   else{ cout<<"Bob win the Game";}
-    //    int even_count=0,odd_count=0;
+    //    int even_arr=0,Alice_Mov=0;
     //    for(int i=0;i<n;i++){
-    //      if(arr[i]%2==0){even_count++;}
-    //      else{odd_count;}
+    //      if(arr[i]%2==0){even_arr++;}
+    //      else{Alice_Mov;}
     //    }
     //    //1 2 3 4 5
     //    //frequency
     //    //calculating condition of alice getting even
-    //    even_count=even_count%2;
-    //    odd_count=odd_count%4;
-    //    if(odd_count==3 ||  odd_count==0 || (even_count==1 && odd_count==1)){
+    //    even_arr=even_arr%2;
+    //    Alice_Mov=Alice_Mov%4;
+    //    if(Alice_Mov==3 ||  Alice_Mov==0 || (even_arr==1 && Alice_Mov==1)){
     //            cout<<"Alice Win"<<endl;
     //    }else{
     //            cout<<"Bob Win"<<endl;
     //    }
-    int mov=(n/2);
-       if(n%2!=0) mov++;
-       int now=mov;
+    //n=4 1 2 3 4
+    int even_arr=(n/2);//even elements in array
+       if(n%2!=0) even_arr++;
+       int Alice_Mov=even_arr; //odd elements in rray
        int even=0,odd=0;
        for(int i=0;i<n;i++){
         if(arr[i]%2==0){
             even++;
         }else{ odd++;}
        }
-       int f=0;
        while(1){
-        if(now<0){
+        if(Alice_Mov<0){
               cout<<"Bob win the match"<<endl;
-              f=1;
+              
+              break;
         }
-        if(f==1) break;
-        int val1=now+(now-1);
-        int val2=mov-now + mov-now;
+        //if Alice start from even integers
+        int val1=Alice_Mov+(Alice_Mov-1);//required element
+        int val2=even_arr-Alice_Mov + even_arr-Alice_Mov;
         if(even>=val1 && odd>=val2){
             cout<<"Alice win the match"<<endl;
-            f==1;
+            break;
         }
-        if(f==1) break;
-        val1=now+now;
-        val2=mov-now+mov-now-1;
+         //if Alice start from even integers
+        val1=Alice_Mov+Alice_Mov;       //required element
+        val2=even_arr-Alice_Mov+even_arr-Alice_Mov-1;
          if(even>=val1 && odd>=val2){
             cout<<"Alice win the match"<<endl;
-            f==1;
+          break;
         }
-        if(f==1) break;
-        now=now-2;
+
+        Alice_Mov=Alice_Mov-2;
 
        } 
     }
@@ -72,6 +73,7 @@ class Solution{
 int main(){
     
     int t;
+    cout<<"TestCase:"<<endl;
     cin >> t;
     while(t--){
         int n;
