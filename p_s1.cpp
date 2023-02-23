@@ -28,8 +28,10 @@ int main(){
     cin >> t;
     while(t--){
         int n;
+        cout<<"Enter the number of sequence n:";
         cin >> n;
         vector<int>s(n);
+        cout <<"Enter All sequence numbers:";
         for(int i = 0; i < n; i++)
             cin >> s[i];
         Solution ob;
