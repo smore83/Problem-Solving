@@ -8,8 +8,6 @@ Your task is to determine who will win the game, if both players play optimally.
 */
 #include <bits/stdc++.h>
 using namespace std;
-
-
 class Solution{
     public:
     void Alice_Bob(vector<int>arr, int n){
@@ -41,6 +39,3 @@ int main(){
     }
 return 0;
 }
-
-
-// } Driver Code Ends
