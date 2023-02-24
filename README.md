@@ -1,6 +1,5 @@
 # Problem-Solving
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # Problem Assignment:
 Alice and Bob are playing a game on a sequence a1,a2,…,an of length n.
  They move in turns and Alice moves first.
@@ -28,9 +27,4 @@ Alice win the match
 Enter the number of sequence n:2
 Enter All sequence numbers:5 9
 Bob win the match
-=======
 
->>>>>>> main
-=======
-
->>>>>>> main
