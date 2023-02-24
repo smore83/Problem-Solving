@@ -10,37 +10,34 @@ Your task is to determine who will win the game, if both players play optimally.
 using namespace std;
 
 
-class Solution{
-    public:
-    void Alice_Bob(vector<int>arr, int n){
-      int Alice_sum=0;
-      for(int i=0;i<n;i+=2){
-         Alice_sum+=arr[i];
-      }
-      if(Alice_sum%2==0){ cout<<"Alice Win the Game";}
-      else{ cout<<"Bob win the Game";}
-    }
-};
+// class Solution{
+//     public:
+//     void Alice_Bob(vector<int>arr, int n){
+//       int Alice_sum=0;
+//       for(int i=0;i<n;i+=2){
+//          Alice_sum+=arr[i];
+//       }
+//       if(Alice_sum%2==0){ cout<<"Alice Win the Game";}
+//       else{ cout<<"Bob win the Game";}
+//     }
+// };
 
-int main(){
+// int main(){
     
-    int t;
-    cin >> t;
-    while(t--){
-        int n;
-        cout<<"Enter the number of sequence n:";
-        cin >> n;
-        vector<int>s(n);
-        cout <<"Enter All sequence numbers:";
-        for(int i = 0; i < n; i++)
-            cin >> s[i];
-        Solution ob;
-        ob.Alice_Bob(s, n);
+//     int t;
+//     cin >> t;
+//     while(t--){
+//         int n;
+//         cout<<"Enter the number of sequence n:";
+//         cin >> n;
+//         vector<int>s(n);
+//         cout <<"Enter All sequence numbers:";
+//         for(int i = 0; i < n; i++)
+//             cin >> s[i];
+//         Solution ob;
+//         ob.Alice_Bob(s, n);
         
-        cout << endl;
-    }
-return 0;
-}
-
-
-// } Driver Code Ends
+//         cout << endl;
+//     }
+// return 0;
+// }
