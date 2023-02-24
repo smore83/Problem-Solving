@@ -12,28 +12,7 @@ using namespace std;
 class Solution{
     public:
     void Alice_Bob(vector<int>arr, int n){
-    // //   int Alice_sum=0;
-    // //   for(int i=0;i<n;i+=2){
-    // //      Alice_sum+=arr[i];
-    // //   }
-    // //   if(Alice_sum%2==0){ cout<<"Alice Win the Game";}
-    // //   else{ cout<<"Bob win the Game";}
-    //    int even_arr=0,Alice_Mov=0;
-    //    for(int i=0;i<n;i++){
-    //      if(arr[i]%2==0){even_arr++;}
-    //      else{Alice_Mov;}
-    //    }
-    //    //1 2 3 4 5
-    //    //frequency
-    //    //calculating condition of alice getting even
-    //    even_arr=even_arr%2;
-    //    Alice_Mov=Alice_Mov%4;
-    //    if(Alice_Mov==3 ||  Alice_Mov==0 || (even_arr==1 && Alice_Mov==1)){
-    //            cout<<"Alice Win"<<endl;
-    //    }else{
-    //            cout<<"Bob Win"<<endl;
-    //    }
-    //n=4 1 2 3 4
+  
     int even_arr=(n/2);//even elements in array
        if(n%2!=0) even_arr++;
        int Alice_Mov=even_arr; //odd elements in rray
