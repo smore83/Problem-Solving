@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Example </title>
+</head>
+<body>
+<h1> Hello </h1>
+<h2> world </h2>
+<h3> !!! </h3>
+<p> This is an HTML example. <br/>
+<b> This text is bold. <br/>
+<u> This text is underlined </u> <br/>
+<i> This text is cursive </i>
+</p>
+</body>
+</html>
+•	<! DOCTYPE html>: This is how each HTML file starts. This line serves the browser, so he knows it is an HTML file.
+•	<html>: With this tag you open the HTML file. Everything that is between <html> and </ html> is part of the HTML file.
+•	<head>: This tag is used to open the header of the file. The header contains metadata, the title of the web site, or the tags for embedding design or functionality. Everything in the header is invisible for the user on the website.
+•	<title> Example </ title>: This is the title of the web page, which is displayed in the browser tab.
+•	</ head>: Here the head is closed.
+•	<body>: Now we start with the body of the HTML file. What is in the body is also displayed.
+•	<h1> Hello </ h1>, <h2> world </ h2>, <h3> !!! </ h3>: Tags that contain a h1, h2, or h3 (that also goes with h4, h5, h6, etc ...) are recognized as headings and the higher the number, the smaller the font size.
+•	<p>: This tag represents a paragraph.
+•	<br />: To make a line break, use this tag. You can close it with the slash directly, because a line break has no content.
+•	<b> </ b>: The text is bold.
+•	<u> </ u>: The text is underlined.
+•	<i> </ i>: To write a text in italics, you need this tag.
+ 
